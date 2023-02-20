@@ -3,8 +3,7 @@
 #include <iostream>
 using namespace std;
 
-// solution 1
-
+/* solution 1
 int main()
 {
     string parola;
@@ -23,4 +22,24 @@ int main()
     }
         cout << "Il numero di vocali nella stringa inserita è: " << contatoreVocali << endl;
     return 0;
+}
+*/
+
+// solution 2
+void contaVocali(string parola){
+    int contatoreVocali = 0;
+        for (int i = 0; i < parola.length(); i++)
+    {
+        char carattereInI = parola[i];
+        if (carattereInI == 'a' || carattereInI == 'e' || carattereInI == 'i' || carattereInI == 'o' || carattereInI == 'u' ||
+            carattereInI == 'A' || carattereInI == 'E' || carattereInI == 'I' || carattereInI == 'O' || carattereInI == 'U')
+        {
+            contatoreVocali++;
+        }
+    }
+        cout << "Il numero di vocali nella stringa inserita è: " << contatoreVocali << endl;
+}
+
+int main(){
+    contaVocali("Marco");
 }
