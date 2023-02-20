@@ -1,6 +1,7 @@
 // Scrivi un programma in c++ che prenda in input una stringa di caratteri e ne stampi ogni carattere in ordine inverso,utilizzando un ciclo for.
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 /* solution 1
